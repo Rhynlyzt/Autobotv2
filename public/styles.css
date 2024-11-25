@@ -1,15 +1,27 @@
 body {
-     padding: 20px;
-     background-color: #f8f9fa;
-     font-family: 'Poppins', sans-serif;
-}
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.ibb.co/QYPqXxF/0c9bbd541df8df697b8995deda24bcd1.gif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color #00ff00:
+    color: #333;
+    padding: 24px;
+  }
+  
  .container {
-     background-color: #ffffff;
-     border-radius: 10px;
+     background-color: black;
+     border-radius: 30px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
      padding: 20px;
      margin-top: 20px;
      margin-bottom: 20px;
+     opacity: 0.5;
+}    
+.navbar {
+    background: linear-gradient(90deg, deepskyblue, #333);
+    border-radius: 10px;
+    opacity: 0.5;
 }
  h1 {
      color: #343a40;
@@ -22,10 +34,10 @@ body {
      margin: 0 auto;
      width: 100%;
      min-height: 150px;
-     padding: 10px;
+     padding: 15px;
      box-sizing: border-box;
      border: 1px solid #ced4da;
-     border-radius: 5px;
+     border-radius: 18px;
      resize: none;
 }
  .btn-primary {
@@ -69,7 +81,7 @@ body {
  #result {
      padding: 10px;
      margin-top: 20px;
-     border-radius: 5px;
+     border-radius: 18px;
 }
  .center-placeholder::placeholder {
      text-align: center;
@@ -78,14 +90,14 @@ body {
 .form-check {
   display: flex;
   margin-top: 10px;
-  padding: 14px;
+  padding: 18px;
   align-items: center;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease; 
   border-color: #ccc;
-  background-color: #fff;
+  background-color: deepskyblue;
 }
 
 .form-check:hover {
@@ -101,16 +113,21 @@ body {
 .disable {
   display: none;
 }
-
+#json-data{
+background-image: url('https://media1.giphy.com/media/pfEOdgxXBFuf3EqQeq/giphy.gif?cid=6c09b952t99v0nkqe3og95toef37tzgventfkqmisahb2p5q&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: blue;
+}
 #inputOfPrefix, #inputOfAdmin {
   padding: 13px;
   width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid blue;
+  border-radius: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease; 
-  border-color: #ccc;
-  background-color: #fff;
+  border-color: blue;
+  background-color: skyblue;
 }
 #listOfCommands, #listOfCommandsEvent, #prefixOfCommands, #adminOfCommands {
   border: none !important;
@@ -119,4 +136,3 @@ body {
 #listOfCommands:not(.modal), #listOfCommandsEvent:not(.modal), #prefixOfCommands:not(.modal), #adminOfCommands:not(.modal) {
   box-shadow: none !important;
 }
-
