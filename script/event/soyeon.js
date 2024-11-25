@@ -1,42 +1,19 @@
 const axios = require('axios');
+const path = require('path');
+const fs = require('fs');
+const request = require('request');
 
 module.exports.config = {
-  name: "soyeon",
-  version: "1.0.0",
+  name: "randomreaction",
+  version: "69",
+  credits: "cttro",
 };
 
-var turnOnChat = {}; 
-
 module.exports.handleEvent = async function ({ api, event }) {
+  if (event.body) {
+    const emojis = ['😼', '🤣', '😠', '🤙', '✅', '❌', '🤖'];
+    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
 
-  if (!turnOnChat.hasOwnProperty(event.threadID)) {
-    turnOnChat[event.threadID] = false;
-  }
-
-  if (event.type === "message" || event.type === "message_reply") {
-    const chat = event.body.toLowerCase();
-
-    if (chat === "soyeon start") {
-      turnOnChat[event.threadID] = true;
-      return api.sendMessage("Chat has been turned on.", event.threadID);
-    } else if (chat === "soyeon stop") {
-      turnOnChat[event.threadID] = false;
-      return api.sendMessage("Chat has been turned off.", event.threadID);
-    }
-
-    if (turnOnChat[event.threadID] && event.senderID !== api.getCurrentUserID()) {
-      try {
-        const response = await axios.post('https://gays-porno-api.onrender.com/whoresome', {
-          prompt: event.body,
-          customId: event.senderID
-        });
-
-        if (response && response.data) {
-          api.sendMessage(response.data.message, event.threadID, event.messageID);
-        }
-      } catch (e) {
-        console.error(e);
-      }
-    }
+    api.setMessageReaction(randomEmoji, event.messageID, () => {}, true);
   }
 };
