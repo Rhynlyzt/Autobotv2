@@ -2,10 +2,10 @@ const axios = require('axios');
 const fs = require('fs-extra');
 
 module.exports.config = {
-  name: "upscale",
+  name: "remini",
   version: "1.0",
   role: 0,
-  credits: "Jonell Magallanes",
+  credits: "encodecomponenet",
   aliases: [],
   usages: "< reply image >",
   cd: 2,
