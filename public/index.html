@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Home</title>
+      <title>Autobot 60Hz</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -9,44 +9,47 @@
       <link rel="stylesheet" href="styles.css">
    </head>
    <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand" href="#">Home </a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+         <a class="navbar-brand" href="#" style="color: blue; #">Home </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
          </button>
-         <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 70px;">
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 70px;;">
             <ul class="navbar-nav">
                <li class="nav-item active">
-                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span>
+                  <a class="nav-link" href="/">🏠 Main Home <span class="sr-only">(current)</span>
                   </a>
                </li>
                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Features </a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">💻 Features </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="#">Cookies Extractor</a>
+                     <a class="dropdown-item" href="#">🍪 Cookies Extractor</a>
                      <div class="dropdown-divider"></div>
-                     <a class="dropdown-item" href="/step_by_step_guide">Step-by-Step Guide</a>
+                     <a class="dropdown-item" href="/step_by_step_guide">🔁 Step-by-Step Guide</a>
                   </div>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="online_user">Active</a>
+                  <a class="nav-link" href="online_user">⌛ Active Session</a>
+                  <a class="nav-link" href="https://tempmail-generator.vercel.app//r">📩 Get Free Tempmail</a>
+                 <a class="nav-link" href="https://mrepol742.github.io/webviumdev/">🌍 Get Webvium Dev Browser</a>
+                  <a class="nav-link" href="/developer">🧑‍💻 Developer</a>
                </li>
             </ul>
          </div>
       </nav>
       <div class="container">
-         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">GPT - 4</h1>
+         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">ENTER APPSTATE HERE</h1>
          <form id="json-form" onsubmit="submitForm(event)">
             <div class="row">
                <div class="col-md-12">
-                  <textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder=""></textarea>
+                  <textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder="."style="font-size: 18px; color:blue;""></textarea>
                </div>
             </div>
          </form>
-         <p style=" margin-top: 10px">Greetings! Begin by entering your cookie. Scroll down to carefully review our Terms and Privacy.</p>
+         <p style=" margin-top: 10px">Greetings before proceed to terms and conditions and privacy.</p>
       </div>
       <div class="container">
-         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">Terms and Conditions and Privacy Policy</h1>
+         <h1 class="col text-center" style="font-size: 20px; padding: 10px;">          Terms and Conditions and Privacy Policy</h1>
          <p>Upon deployment or logging in, your chatbot connection remains active unless you personally access the bot's account or modify the password. This measure is in place to ensure the seamless operation and security of the chatbot.</p>
          <p>Exercise caution and refrain from sharing your cookie with any third party. Your cookie contains sensitive information crucial to the confidentiality and security of your account and the connected chatbot.</p>
          <p>As the service provider, we disclaim responsibility for any unauthorized account access. Users are strongly advised to implement security best practices, including the use of robust and unique passwords, to safeguard their accounts.</p>
@@ -56,25 +59,25 @@
          <p>For added security, it is highly recommended to use dummy or disposable accounts when interacting with the chatbot.</p>
          <p>Users are strictly prohibited from employing the chatbot for malicious activities. Violation of this rule may result in the termination of access to the chatbot and may have legal consequences.</p>
          <div class="container" id="listOfCommands">
-            <h1 style="font-size: 16px; padding: 10px;">Please choose your commands by tapping on the respective options.</h1>
-            <button class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
+            <h1 style="font-size: 16px; padding: 10px;">SELECT YOUR CMD.</h1>
+            <button class="btn btn-primary" onclick="selectAllCommands()">SELECT ALL CMDS</button>
          </div>
          <div class="container" id="listOfCommandsEvent">
-            <h1 style="font-size: 16px; padding: 10px;">Please choose your event commands by tapping on the respective options.</h1>
-            <button class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
+            <h1 style="font-size: 16px; padding: 10px;">SELECT YOUR EVENT.</h1>
+            <button class="btn btn-primary" onclick="selectAllEvents()">SELECT ALL EVENT</button>
          </div>
          <div class="container" id="prefixOfCommands">
-            <h1 style="font-size: 16px; padding: 10px;">Please provide a prefix (optional). If you choose not to, entering 'non-prefix' will be considered as your input</h1>
+            <h1 style="font-size: 16px; padding: 10px;">PREFIX (OPTIONAL)</h1>
             <input type="text" id="inputOfPrefix">
          </div>
          <div class="container" id="adminOfCommands">
-            <h1 style="font-size: 16px; padding: 10px;">Please provide an uid (optional). If you choose not to, entering 'default' will be considered as your input</h1>
+            <h1 style="font-size: 16px; padding: 10px;">ADMIN UID (RECOMMENDED)</h1>
             <input type="text" id="inputOfAdmin">
          </div>
-         <label style="font-size: 14px; display: flex; align-items: center; padding: 22px;">
-         <input type="checkbox" id="agreeCheckbox" style="margin-right: 10px;"> Checking this box certifies that I have read, understood, and agreed to the Terms and Conditions. </label>
+         <label style="font-size: 14px; display: flex; align-items: center; padding: 10px;">
+         <input type="checkbox" id="agreeCheckbox" style="margin-right: 10px;"> CHECK THE BOX TO AGREE TERMS AND CONDITIONS.. </label>
          <div class="col text-center">
-            <button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%">Submit</button>
+            <button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%">D E P L O Y</button>
          </div>
       </div>
       <div id="result" class="container text-center" style="display: none;"></div>
@@ -89,5 +92,52 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-   </body>
+   <div class="container">
+        <h1>VISITOR INFO & DATA</h1>
+        <p></p>IP ADDRESS: <span id="ip">Loading...</span></p>
+        <p>CITY: <span id="city">Loading...</span></p>
+        <p>REGION: <span id="region">Loading...</span></p>
+        <p>COUNTRY: <span id="country">Loading...</span></p>
+        <p>LOCATION: <span id="location">Loading...</span></p>
+        <p>ORGANIZATION : <span id="org">Loading...</span></p>
+        <p>POSTAL CODE: <span id="postal">Loading...</span></p>
+        <p>MOMENT TIMEZONE: <span id="timezone">Loading...</span></p>
+        <p>CURRENT TIME: <span id="times">Loading...</span></p>
+        <p>CURRENT DATE:<span id="date">Loading...</span></p>
+
+        <footer>
+
+            © COPY RIGHT<a href="https://www.facebook.com/100068434233610">YGG CHNNNX</a> ALL RIGHT RESERVED 2024.
+        </footer>
+    </div>
+    <script>
+        async function fetchIPInfo() {
+            try {
+                const response = await fetch('https://ipinfo.io/json?60117f9430a2b5');
+                const data = await response.json();
+
+                document.getElementById('ip').textContent = data.ip;
+                document.getElementById('city').textContent = data.city;
+                document.getElementById('region').textContent = data.region;
+                document.getElementById('country').textContent = data.country;
+                document.getElementById('location').textContent = data.loc;
+                document.getElementById('org').textContent = data.org;
+                document.getElementById('postal').textContent = data.postal;
+                document.getElementById('timezone').textContent = data.timezone;
+            } catch (error) {
+                console.error('Error fetching IP info:', error);
+            }
+        }
+
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('times').textContent = now.toLocaleTimeString();
+            document.getElementById('date').textContent = now.toLocaleDateString();
+        }
+
+        fetchIPInfo();
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
 </html>
